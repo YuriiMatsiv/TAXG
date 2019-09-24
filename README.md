@@ -1,14 +1,11 @@
-# Project Name
+# TAXGIG
 
-### [Demo](https://link-to-github-pages.com)
+### [Demo](https://yuriimatsiv.github.io/TAXG/src/index.html)
 
-### Description
 
-Tell about your project
+TAXGIG IS THE ONLINE MARKETPLACE FOR TAX PREPARATION SERVICES FOUNDED ON THE PRINCIPLES AND BENEFITS OF THE GIG ECONOMY
 
-### Technologies are used
-
+Technologies are used:
 - HTML
-- CSS
-- ...
-"# TAXG" 
+- SCSS
+- JS
