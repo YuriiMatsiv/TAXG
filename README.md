@@ -1,6 +1,6 @@
 # TAXGIG
 
-### [Demo](https://yuriimatsiv.github.io/TAXG/src/index.html)
+### [Demo](https://yuriimatsiv.github.io/Taxg/src/index.html)
 
 
 TAXGIG IS THE ONLINE MARKETPLACE FOR TAX PREPARATION SERVICES FOUNDED ON THE PRINCIPLES AND BENEFITS OF THE GIG ECONOMY
