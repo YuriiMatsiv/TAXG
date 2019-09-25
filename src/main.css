@@ -24,10 +24,13 @@ header {
   align-items: center;
 }
 
+.menu {
+  width: 80%;
+}
+
 .header-menu {
   display: flex;
   justify-content: flex-end;
-  width: 90%;
   padding: 23px 0px 30px 0px;
 }
 .header-menu__list {
