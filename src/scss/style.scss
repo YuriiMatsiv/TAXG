@@ -21,7 +21,7 @@ body {
 
 header {
   height: 88px;
-  margin: 0 auto;
+
   width: 100%;
   max-width: 1440px;
   display: flex;
@@ -32,14 +32,16 @@ header {
 .menu {
   display: flex;
   justify-content: flex-end;
-  width: 72%;
-  padding: 23px 30px 30px 30px;
+  width: 90%;
+  padding: 23px 0px 30px 0px;
 }
 
-.menu-info {
+.header-menu {
   &__list {
     display: flex;
     list-style-type: none;
+    margin: 0;
+    padding: 0;
   }
 
   &__item {
@@ -63,36 +65,11 @@ header {
   }
 }
 
-.menu-login {
-
-  &__list {
-    display: flex;
-    list-style-type: none;
-    padding: 0;
-  }
-
-  &__item {
-    margin: 0 18px;
-  }
-
-  &__link {
-    text-decoration: none;
-    color: black;
-    text-transform: uppercase;
-    font-size: 14px;
-    border: 1px solid #fdfdfd;
-    border-radius: 4px;
-    font-weight: 600;
-    padding: 12px 19px;
-
-    &:hover {
-      border: 1px solid black;
-    }
-
-  }
+.header-menu__item_ident{
+  margin-left: 25px;
 }
 
-.menu-login__item_with-arrow:after {
+.header-menu__item_with-arrow:after {
   content: "→";
   color: black;
 }
@@ -426,12 +403,14 @@ footer {
 }
 
 @media only screen and (max-width: 1024px) {
+  body{
+    overflow-x: hidden;
+  }
   .wrapper{
     padding: 0 20px;
   }
-  .menu {
-    width: 83%;
-  }
+
+
   .footer {
     flex-direction: column;
     width: 96%;
@@ -448,7 +427,6 @@ footer {
 
 
 @media only screen and (max-width: 768px) {
-
   body{
     overflow-x: hidden;
   }
@@ -470,50 +448,54 @@ footer {
     position: absolute;
     height: 100vh;
     top:88px;
-    background-color: fdfdfd;
+    background-color: #fdfdfd;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
     padding: 0 10px;
   }
-  .menu-info, .menu-login{
+  .header-menu{
     display: flex;
     flex-direction: column;
-    height: 50%;
-    align-items: center;
+    height: 100%;
+    align-items: stretch;
   }
 .header {
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
   background-color: #FDFDFD;
-
-}
-  .menu-info__list, .menu-login__list {
-
+  }
+  .header-menu__list{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-    width: 320px;
-  }
-  .menu-info__link, .menu-login__link {
+    justify-content: space-between;
+    height: 100%;
+     align-content: center;
+    text-align: left;
+    }
+  .header-menu {
     border: none;
     margin: 0 auto;
     color: #FDFDFD;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
   }
-.menu-info__item {
-width: 200px;
-}
-
+  .header-menu__item {
+    width: 200px;
+  }
 
   .nav-active{
     transform: translateX(0%);
     transition-duration: 1s;
     background-color: $bg-color;
-
   }
 
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
   .dark-theme {
     position: fixed;
     background-color: $bg-color;
