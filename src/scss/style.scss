@@ -326,6 +326,27 @@ footer {
   }
 }
 
+.contact-button {
+  display:none;
+  &__link{
+    font-family: Work Sans;
+    font-weight: 600;
+    font-size: 14px;
+    color: #FDFDFD;
+    background-color: #86BE26;
+    text-decoration: none;
+    display: inline-block;
+    width: 344px;
+    height: 56px;
+    border-radius: 5px;
+    padding-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+
+  }
+
+
+}
 
 
 
@@ -428,6 +449,13 @@ footer {
   .footer-list {
     width: 100%;
     transition: ease all .9s;
+  }
+
+  .contact {
+    display: none;
+  }
+  .contact-button {
+    display: block;
   }
 
 }
