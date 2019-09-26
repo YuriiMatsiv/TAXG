@@ -433,7 +433,7 @@ footer {
 
 //  mobile version
 
-.burger__line {
+.burger__line1, .burger__line2, .burger__line3 {
   width: 20px;
   height: 3px;
   background-color: #292F42;
@@ -494,7 +494,7 @@ footer {
     cursor: pointer;
     padding: 0 10px;
   }
-  .burger__line_color{
+  .burger-color{
     background-color: lightgrey;
   }
 
@@ -564,5 +564,17 @@ footer {
   .contact-button {
     display: block;
   }
+
+
+
 }
 
+.cross .burger__line1 {
+   transform: rotate(-45deg) translate(-5px, 4px);
+ }
+.cross .burger__line2{
+  opacity: 0;
+}
+.cross .burger__line3{
+  transform: rotate(45deg) translate(-5px, -4px);
+}
