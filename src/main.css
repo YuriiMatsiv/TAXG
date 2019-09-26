@@ -8,6 +8,7 @@
   width: 100%;
   max-width: 1440px;
   padding: 0 120px;
+  transition: ease all .9s;
 }
 
 body {
@@ -228,6 +229,7 @@ footer {
   padding-top: 364px;
   color: white;
   overflow: hidden;
+  transition: ease all .9s;
 }
 
 .footer {
@@ -238,6 +240,7 @@ footer {
 }
 
 .footer-info {
+  transition: ease all .9s;
   display: flex;
   flex-direction: column;
 }
@@ -354,20 +357,24 @@ footer {
 
   .wrapper {
     padding: 0 20px;
+    transition: ease all .9s;
   }
 
   .footer {
     flex-direction: column;
     width: 96%;
+    transition: ease all .9s;
   }
 
   .footer-info {
     flex-direction: row-reverse;
     justify-content: space-between;
+    transition: ease all .9s;
   }
 
   .footer-list {
     width: 100%;
+    transition: ease all .9s;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -389,25 +396,25 @@ footer {
     padding: 0 10px;
   }
 
-  .header-menu {
-    width: 100%;
-    position: absolute;
-    height: 100vh;
-    top: 88px;
-    background-color: #fdfdfd;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    transform: translateX(100%);
-    transition: transform 0.5s ease-in;
-    padding: 0 10px;
+  .burger__line_color {
+    background-color: lightgrey;
   }
 
   .header-menu {
+    width: 105%;
+    position: absolute;
+    height: 100vh;
+    top: 88px;
+    left: 0px;
+    background-color: #292F42;
     display: flex;
     flex-direction: column;
-    height: 80%;
-    align-items: stretch;
+    align-items: flex-start;
+    justify-content: flex-start;
+    transform: translateX(120%);
+    transition: transform 0.5s ease-in;
+    padding: 0 10px 50px 0;
+    margin: 0;
   }
 
   .header {
@@ -419,28 +426,25 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100%;
-    align-content: center;
+    height: 80%;
+    padding: 20px 0 20px 30px;
     text-align: left;
   }
 
-  .header-menu {
+  .header-menu__link {
     border: none;
-    margin: 0 auto;
-    color: #FDFDFD;
-    display: flex;
-    flex-direction: column;
-    align-content: space-around;
   }
 
   .header-menu__item {
     width: 200px;
   }
 
+  .header-menu__item_ident {
+    margin-left: 10px;
+  }
+
   .nav-active {
     transform: translateX(0%);
-    transition-duration: 1s;
-    background-color: #292F42;
   }
 
   .content {
