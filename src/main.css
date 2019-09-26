@@ -415,7 +415,7 @@ footer {
     transition: ease all .9s;
   }
 
-  .contact {
+  .contact__input {
     display: none;
   }
 
