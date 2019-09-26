@@ -432,6 +432,10 @@ footer {
     padding: 0;
   }
 
+  .aside {
+    width: 70%;
+  }
+
   .main-logo {
     padding: 0 20px;
   }
@@ -510,16 +514,16 @@ footer {
     color: #FDFDFD;
   }
 
-  .white-burger {
-    background-color: lightgrey;
-  }
-
-  .contact {
+  .contact__input {
     display: none;
   }
 
-  .contact-button {
+  .contact-button__link {
     display: block;
+  }
+
+  .white-burger {
+    background-color: lightgrey;
   }
 }
 .cross .burger__line1 {
