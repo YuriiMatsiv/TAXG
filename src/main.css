@@ -487,7 +487,11 @@ footer {
 
   .header-menu__link {
     border: none;
+    color: lightgrey;
   }
+    .header-menu__link:hover {
+        border: 1px solid white;
+    }
 
   .header-menu__item {
     width: 200px;
