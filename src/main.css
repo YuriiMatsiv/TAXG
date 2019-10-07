@@ -1,7 +1,7 @@
 @charset "UTF-8";
 * {
   box-sizing: border-box;
-  font-family: Work Sans;
+  font-family: 'Work Sans', sans-serif;
 }
 
 .wrapper {
@@ -43,6 +43,9 @@ header {
 .header-menu__item {
   margin: 0 10px;
 }
+.header-menu__item_ident {
+  margin-left: 25px;
+}
 .header-menu__link {
   text-decoration: none;
   color: black;
@@ -56,30 +59,6 @@ header {
 .header-menu__link:hover {
   border: 1px solid black;
 }
-
-.registration-button {
-  display: none;
-}
-.registration-button__link {
-  font-family: Work Sans;
-  font-weight: 600;
-  font-size: 14px;
-  color: #FDFDFD;
-  background-color: #86BE26;
-  text-decoration: none;
-  display: inline-block;
-  width: 344px;
-  height: 56px;
-  border-radius: 5px;
-  padding-top: 20px;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-.header-menu__item_ident {
-  margin-left: 25px;
-}
-
 .header-menu__item_with-arrow:after {
   content: "→";
   color: black;
@@ -243,7 +222,6 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
-  height: 900px;
   width: 100%;
   padding-top: 364px;
   color: white;
@@ -489,9 +467,6 @@ footer {
     border: none;
     color: lightgrey;
   }
-    .header-menu__link:hover {
-        border: 1px solid white;
-    }
 
   .header-menu__item {
     width: 200px;
