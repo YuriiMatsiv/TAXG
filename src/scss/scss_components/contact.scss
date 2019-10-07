@@ -1,0 +1,38 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__title {
+    font-family: Lora;
+    letter-spacing: 1.8px;
+    color: #9DD241;
+    font-weight: bold;
+    font-size: 34px;
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    width: 55%;
+    font-family: Work Sans;
+    font-weight: 600;
+    font-size: 14px;
+    color: rgba(41, 47, 66, 0.25);
+    line-height: 24px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.3px;
+    margin-bottom: 60px;
+  }
+
+  &__input {
+    width: 32%;
+    height: 55px;
+    border: 1px solid rgba(41, 47, 66, 0.1);
+    border-radius: 4px;
+    text-align: left;
+    padding-left: 40px;
+    color: $opacity-text;
+  }
+}

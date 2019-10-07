@@ -1,0 +1,57 @@
+.section-block {
+  padding-top: 49px;
+}
+
+.section {
+  width: 890px;
+  height: 137px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 28px 71px 15px 30px;
+  margin-bottom: 15px;
+
+  &:hover {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+
+    .section__link {
+      visibility: visible;
+      color: #86BE26;
+    }
+  }
+
+  &__titile {
+    font-family: Work Sans;
+    font-weight: 600;
+    font-size: 24px;
+    margin: 0;
+  }
+
+  &__info {
+    font-family: Work Sans;
+    font-weight: normal;
+    font-size: 16px;
+    color: $opacity-text;
+
+  }
+
+  &__link {
+    visibility: hidden;
+    font-family: Work Sans;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    height: 30px;
+    cursor: pointer;
+
+    &:after {
+      content: "→";
+      color: black;
+
+    }
+
+  }
+
+
+}

@@ -1,34 +1,4 @@
 @charset "UTF-8";
-* {
-  box-sizing: border-box;
-  font-family: 'Work Sans', sans-serif;
-}
-
-.wrapper {
-  width: 100%;
-  max-width: 1440px;
-  padding: 0 120px;
-  transition: ease all .9s;
-}
-
-body {
-  margin: 0;
-  background: #fdfdfd;
-}
-
-header {
-  height: 88px;
-  width: 100%;
-  max-width: 1440px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.menu {
-  width: 80%;
-}
-
 .header-menu {
   display: flex;
   justify-content: flex-end;
@@ -64,17 +34,6 @@ header {
   color: black;
 }
 
-.content {
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-}
-
-.aside {
-  width: 28%;
-  padding: 122px 0px 10px 0px;
-}
-
 .main-list {
   cursor: pointer;
   padding: 0;
@@ -88,12 +47,6 @@ header {
 }
 .main-list__item:hover {
   font-weight: bolder;
-}
-
-.main {
-  padding-top: 68px;
-  width: 72%;
-  margin-bottom: 98px;
 }
 
 .search {
@@ -132,53 +85,6 @@ header {
   position: absolute;
   top: 160px;
   left: 80px;
-}
-
-.section-block {
-  padding-top: 49px;
-}
-
-.section {
-  width: 890px;
-  height: 137px;
-  box-sizing: border-box;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 28px 71px 15px 30px;
-  margin-bottom: 15px;
-}
-.section:hover {
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
-}
-.section:hover .section__link {
-  visibility: visible;
-  color: #86BE26;
-}
-.section__titile {
-  font-family: Work Sans;
-  font-weight: 600;
-  font-size: 24px;
-  margin: 0;
-}
-.section__info {
-  font-family: Work Sans;
-  font-weight: normal;
-  font-size: 16px;
-  color: #6F7583;
-}
-.section__link {
-  visibility: hidden;
-  font-family: Work Sans;
-  font-weight: 600;
-  font-size: 14px;
-  text-transform: uppercase;
-  height: 30px;
-  cursor: pointer;
-}
-.section__link:after {
-  content: "→";
-  color: black;
 }
 
 .contact {
@@ -353,6 +259,53 @@ footer {
 .footer-licence__link {
   text-decoration: none;
   color: #86BE26;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1440px;
+  padding: 0 120px;
+  transition: ease all .9s;
+}
+
+body {
+  margin: 0;
+  background: #fdfdfd;
+}
+
+header {
+  height: 88px;
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  width: 80%;
+}
+
+.content {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.aside {
+  width: 28%;
+  padding: 122px 0px 10px 0px;
+}
+
+.main {
+  padding-top: 68px;
+  width: 72%;
+  margin-bottom: 98px;
 }
 
 .burger__line1, .burger__line2, .burger__line3 {

@@ -1,0 +1,16 @@
+.main-list {
+  cursor: pointer;
+  padding: 0;
+
+  &__item {
+    list-style-type: none;
+    padding-bottom: 22px;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 500;
+
+    &:hover {
+      font-weight: bolder;
+    }
+  }
+}
