@@ -30,6 +30,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition-duration: 1s;
 }
 
 .menu {
@@ -100,18 +101,17 @@ header {
 
 }
 
-
 @media only screen and (max-width: 768px) {
-  body{
+  body {
     overflow-x: hidden;
   }
-  .wrapper{
+  .wrapper {
     padding: 0;
   }
   .aside {
     width: 70%;
   }
-  .main-logo{
+  .main-logo {
     padding: 0 20px;
   }
 
@@ -120,7 +120,7 @@ header {
     cursor: pointer;
     padding: 0 10px;
   }
-  .burger-color{
+  .burger-color {
     background-color: lightgrey;
   }
 
@@ -128,7 +128,7 @@ header {
     width: 105%;
     position: absolute;
     height: 100vh;
-    top:88px;
+    top: 88px;
     left: 0px;
     background-color: $bg-color;
     display: flex;
@@ -139,25 +139,27 @@ header {
     transition: transform 0.5s ease-in;
     padding: 0 10px 50px 0;
     margin: 0;
+   //display: none;
   }
   .registration-button {
-    display: block}
+    display: block;
+  }
 
   .header {
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
     background-color: #FDFDFD;
-    }
-  .header-menu__list{
+  }
+  .header-menu__list {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 80%;
     padding: 20px 0 20px 30px;
     text-align: left;
-    }
+  }
   .header-menu__link {
     border: none;
-   color: lightgrey;
+    color: lightgrey;
   }
 
   .header-menu__item {
@@ -166,8 +168,10 @@ header {
   .header-menu__item_ident {
     margin-left: 10px;
   }
-  .nav-active{
+  .nav-active {
     transform: translateX(0%);
+    display: block;
+    transition: transform 0.5s ease-in;
   }
 
   .content {
@@ -179,7 +183,7 @@ header {
     position: fixed;
     background-color: $bg-color;
     z-index: 99;
-    transition-duration: 2s;
+    transition-duration: 1.5s;
     color: #FDFDFD;
   }
   .contact__input {
@@ -188,19 +192,30 @@ header {
   .contact-button__link {
     display: block;
   }
-  .white-burger{
+  .white-burger {
     background-color: lightgrey;
   }
-
-
+  .footer-info {
+    flex-direction: row;
+  }
+  .footer-contakt{
+    display: none;
+  }
+  .footer-list {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer-list__column {
+    padding-right: 0px;
+  }
 }
 
 .cross .burger__line1 {
-   transform: rotate(-45deg) translate(-5px, 4px);
- }
+transform: rotate(-45deg) translate(-5px, 4px);
+}
 .cross .burger__line2{
-  opacity: 0;
+opacity: 0;
 }
 .cross .burger__line3{
-  transform: rotate(45deg) translate(-5px, -4px);
+transform: rotate(45deg) translate(-5px, -4px);
 }

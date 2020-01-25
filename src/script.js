@@ -14,15 +14,13 @@ let navSlide = function () {
     const nav = document.querySelector('.header-menu');
     const navLinks = document.querySelectorAll('.navLinks li');
     const darkHeader = document.querySelector(".header");
-    // const line = document.querySelector(".burger__line");
+
 
 console.log(burger);
     burger.addEventListener('click', () => {
 
         nav.classList.toggle('nav-active');
         darkHeader.classList.toggle('dark-theme');
-        // line.classList.toggle('burger__line_color');
-
         burger.classList.toggle('cross');
 
     });
